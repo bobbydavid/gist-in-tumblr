@@ -23,7 +23,7 @@ all: full partial
 full: out/$(FULL)
 partial: out/$(PARTIAL)
 clean:
-	rm -f tmp/* out/*
+	rm -f tmp out
 
 out/$(FULL): tmp/writeCapture.min.js tmp/gist-in-tumblr.min.js
 	@mkdir -p out
