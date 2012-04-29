@@ -1,6 +1,13 @@
 $(document).ready(function(){
-  $('a.gist').writeCapture().html(
-    '<scr'+'ipt src="'+$(this).text()+'.js"></scr'+'ipt>'
+  $("p.gist a:only-child").replaceWith(
+    function(){
+    return '<div class="gist">'+this.href+'</div>';
+    }
   );
+  $("p.gist div.gist").each(function(){
+    writeCapture.html(this,
+      '<scr'+'ipt src="'+$(this).html()+'.js"></scr'+'ipt>'
+    );
+  });
 });
 
