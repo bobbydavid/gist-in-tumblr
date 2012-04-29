@@ -1,3 +1,9 @@
+/**
+ * git-in-tumblr-partial.js
+ *
+ * Copyright (C) 2012 Robert Martin <rdmartin3@gmail.com>
+ *
+ */
 $(document).ready(function(){
   $("p.gist a:only-child").replaceWith(
     function(){

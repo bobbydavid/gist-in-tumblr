@@ -26,3 +26,10 @@ into the "Description" field:
 
 If you already have jQuery somewhere, then you do not need the first link.
 
+
+License
+-------
+
+Owing to writeCapture being licensed under GPL, this software is under the
+same.
+
