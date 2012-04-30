@@ -62,7 +62,7 @@ Then modify the HTML source and add the class 'gist' to the paragraph tag:
 
 ```html
 <p>Here is my latest Gist:</p>
-<p> class="gist">https://gist.github.com/2553077</p>
+<p class="gist">https://gist.github.com/2553077</p>
 <p>Text continues here...</p>
 ```
 
