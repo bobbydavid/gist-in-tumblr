@@ -1,7 +1,10 @@
 Embed Gists in Tumblr
 =====================
 
-Scripts to embed Gists in your Tumblr blog.
+Tumblr says you can't paste Github Gists into your blog.
+
+Use this hack to do it anyway.
+
 
 How it works
 ------------
@@ -12,19 +15,57 @@ This is mostly a hack-job of
 inspired by [this gist](https://gist.github.com/2506180).
 
 
-Installation
-------------
+Super Fast Installation
+-----------------------
 
-The fastest way to install is simply to paste this code into your
-Tumblr blog, in the <head> section. For most themes, this can be
-accomplished by clicking "Customize" and then pasting the following
-into the "Description" field:
+Copy these scripts into the <head> of the blog:
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="http://github.com/downloads/iamnoah/writeCapture/jquery.writeCapture-1.0.5-min.js"></script>
-    <script type="text/javascript" src="<TODO: SCRIPT HERE>?"></script>
+```html
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://github.com/downloads/bobbydavid/gist-in-tumblr/gist-in-tumblr-full.v0.1.1.min.js"></script>
+```
 
-If you already have jQuery somewhere, then you do not need the first link.
+To active a Gist, put it in a <p> tag with the class "gist" by itself:
+
+```html
+<p class="gist">https://gist.github.com/2553077</p>
+```
+
+Done!
+
+
+More Detailed Installation
+--------------------------
+
+Copy these scripts into the <head> of the blog:
+
+```html
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://github.com/downloads/bobbydavid/gist-in-tumblr/gist-in-tumblr-full.v0.1.1.min.js"></script>
+```
+
+For most Tumblr themes, this can be accomplished by clicking "Customize"
+and then pasting the script tags your "Description" field.
+
+To active a Gist, put it in a <p> tag with the class "gist" by itself.
+For instance, you start with the Gist on its own paragraph in your blog:
+
+```html
+Here is my latest Gist:
+
+https://gist.github.com/2553077
+
+Text continues here...
+```
+
+Then modify the HTML source and add the class 'gist' to the paragraph tag:
+
+```html
+<p>Here is my latest Gist:</p>
+<p> class="gist">https://gist.github.com/2553077</p>
+<p>Text continues here...</p>
+```
+
 
 
 Download and Build
@@ -44,6 +85,5 @@ The files show up in the `out/` directory.
 License
 -------
 
-Owing to writeCapture being licensed under GPL, this software is under the
-same.
+Owing to writeCapture being licensed under GPL, this software is under the same.
 
