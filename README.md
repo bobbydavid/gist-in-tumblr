@@ -15,8 +15,8 @@ This is mostly a hack-job of
 inspired by [this gist](https://gist.github.com/2506180).
 
 
-Super Fast Installation
------------------------
+Fast Installation
+-----------------
 
 Copy these scripts into the <head> of the blog:
 
@@ -65,7 +65,6 @@ Then modify the HTML source and add the class 'gist' to the paragraph tag:
 <p> class="gist">https://gist.github.com/2553077</p>
 <p>Text continues here...</p>
 ```
-
 
 
 Download and Build
