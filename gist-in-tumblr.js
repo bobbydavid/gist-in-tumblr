@@ -13,13 +13,15 @@ $(document).ready(function(){
         +'</div>';
   $("p.gist a:only-child").replaceWith(
     function(){
-    return '<div class="gist"><div>'+this.href+'</div>'+bp+'</div>';
+    return ('<div class="gist">'
+           +  '<div class="inner-gist">'
+           +    this.href
+           +  '</div>'
+           +'</div>');
     }
   );
-  $("p.gist div.gist div:first").each(function(){
-    writeCapture.html(this,
+  $("p.gist div.gist div.inner-gist").writeCapture().html(
       '<scr'+'ipt src="'+$(this).html()+'.js"></scr'+'ipt>'
-    );
-  });
+    ).after(bp);
 });
 

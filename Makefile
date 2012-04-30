@@ -25,7 +25,7 @@ partial: out/$(PARTIAL)
 clean:
 	rm -rf tmp out
 
-out/$(FULL): tmp/writeCapture.min.js tmp/gist-in-tumblr.min.js
+out/$(FULL): tmp/writeCapture.min.js tmp/jquery.writeCapture.min.js tmp/gist-in-tumblr.min.js
 	@mkdir -p out
 	@echo "  Making $(FULL)"
 	@$(BOILERPLATE) >$@
@@ -38,6 +38,11 @@ out/$(PARTIAL): tmp/gist-in-tumblr.min.js
 	@cat $^ >>$@
 
 tmp/writeCapture.min.js: writeCapture.js
+	@mkdir -p tmp
+	@echo "  Compressing $< into $@"
+	@$(UGLIFY_BIN) --no-copyright --output $@ $<
+
+tmp/jquery.writeCapture.min.js: jquery.writeCapture.js
 	@mkdir -p tmp
 	@echo "  Compressing $< into $@"
 	@$(UGLIFY_BIN) --no-copyright --output $@ $<
