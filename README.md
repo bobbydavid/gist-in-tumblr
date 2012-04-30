@@ -27,6 +27,20 @@ into the "Description" field:
 If you already have jQuery somewhere, then you do not need the first link.
 
 
+Download and Build
+------------------
+
+As part of the build process, you must install
+[uglify-js](https://github.com/mishoo/UglifyJS):
+
+    $ git clone git@github.com:bobbydavid/gist-in-tumblr.git
+    $ cd gist-in-tumblr
+    $ npm install uglify-js
+    $ make
+
+The files show up in the `out/` directory.
+
+
 License
 -------
 
