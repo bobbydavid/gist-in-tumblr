@@ -20,8 +20,11 @@ $(document).ready(function(){
            +'</div>');
     }
   );
-  $("p.gist div.gist div.inner-gist").writeCapture().html(
-      '<scr'+'ipt src="'+$(this).html()+'.js"></scr'+'ipt>'
+  $("p.gist div.gist div.inner-gist").each(function(){
+    var el = this;
+    $(el).writeCapture().html(
+      '<scr'+'ipt src="'+$(el).html()+'.js"></scr'+'ipt>'
     ).after(bp);
+  });
 });
 
