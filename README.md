@@ -19,17 +19,17 @@ gist-in-tumblr requires [jQuery](https://github.com/jquery/jquery).
 Fast Installation
 -----------------
 
-Copy these scripts into the <head> of the blog:
+Copy these scripts into the &lt;head&gt; of the blog:
 
 ```html
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="https://github.com/downloads/bobbydavid/gist-in-tumblr/gist-in-tumblr-full.v0.1.1.min.js"></script>
 ```
 
-To active a Gist, put it in a <p> tag with the class "gist" by itself:
+To active a Gist, put it in a &lt;p&gt; tag with the class "gist" by itself:
 
 ```html
-<p class="gist">https://gist.github.com/2553077</p>
+&lt;p class="gist"&gt;https://gist.github.com/2553077&lt;/p&gt;
 ```
 
 Done!
@@ -38,7 +38,7 @@ Done!
 More Detailed Installation
 --------------------------
 
-Copy these scripts into the <head> of the blog:
+Copy these scripts into the &lt;head&gt; of the blog:
 
 ```html
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -48,7 +48,7 @@ Copy these scripts into the <head> of the blog:
 For most Tumblr themes, this can be accomplished by clicking "Customize"
 and then pasting the script tags your "Description" field.
 
-To active a Gist, put it in a <p> tag with the class "gist" by itself.
+To active a Gist, put it in a &lt;p&gt; tag with the class "gist" by itself.
 For instance, you start with the Gist on its own paragraph in your blog:
 
 ```html
@@ -62,9 +62,9 @@ Text continues here...
 Then modify the HTML source and add the class 'gist' to the paragraph tag:
 
 ```html
-<p>Here is my latest Gist:</p>
-<p class="gist">https://gist.github.com/2553077</p>
-<p>Text continues here...</p>
+&lt;p&gt;Here is my latest Gist:&lt;/p&gt;
+&lt;p class="gist"&gt;https://gist.github.com/2553077&lt;/p&gt;
+&lt;p&gt;Text continues here...&lt;/p&gt;
 ```
 
 
