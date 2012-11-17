@@ -1,6 +1,9 @@
 
 VERSION=0.1.1
-UGLIFY_BIN:=./node_modules/uglify-js/bin/uglifyjs
+# You may need to change your path to uglifyjs.
+# To install it, try:
+# $ npm install uglify-js
+UGLIFY_BIN:=/usr/local/bin/uglifyjs
 
 FULL:=gist-in-tumblr-full.v$(VERSION).min.js
 PARTIAL:=gist-in-tumblr-partial.v$(VERSION).min.js
