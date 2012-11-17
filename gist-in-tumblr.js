@@ -13,17 +13,18 @@ $(document).ready(function(){
         +'</div>';
   $("p.gist a:only-child").replaceWith(
     function(){
-    return ('<div class="gist">'
-           +  '<div class="inner-gist">'
-           +    this.href
-           +  '</div>'
-           +'</div>');
+      return ('<div class="gist">'
+             +  '<div class="inner-gist">'
+             +    this.href
+             +  '</div>'
+             +'</div>');
     }
   );
   $("p.gist div.gist div.inner-gist").each(function(){
-    var el = this;
-    $(el).writeCapture().html(
-      '<scr'+'ipt src="'+$(el).html()+'.js"></scr'+'ipt>'
+    var $el = $(this);
+    var url = $el.html().replace(/(gist\.github\.com\/[0-9]+)/, '$1.js');;
+    $el.writeCapture().html(
+      '<scr'+'ipt src="'+url+'"></scr'+'ipt>'
     ).after(bp);
   });
 });
