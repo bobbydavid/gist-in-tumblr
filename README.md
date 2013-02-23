@@ -29,7 +29,7 @@ Copy these scripts into the &lt;head&gt; of the blog:
 To active a Gist, put it in a &lt;p&gt; tag with the class "gist" by itself:
 
 ```html
-&lt;p class="gist"&gt;https://gist.github.com/2553077&lt;/p&gt;
+<p class="gist">https://gist.github.com/2553077</p>
 ```
 
 Done!
