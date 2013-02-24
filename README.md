@@ -65,9 +65,9 @@ Text continues here...
 Then modify the HTML source and add the class 'gist' to the paragraph tag:
 
 ```html
-&lt;p&gt;Here is my latest Gist:&lt;/p&gt;
-&lt;p class="gist"&gt;https://gist.github.com/2553077&lt;/p&gt;
-&lt;p&gt;Text continues here...&lt;/p&gt;
+<p>Here is my latest Gist:</p>
+<p class="gist">https://gist.github.com/2553077</p>
+<p>Text continues here...</p>
 ```
 
 The Nitty Gritty. And Misc.
