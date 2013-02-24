@@ -26,6 +26,9 @@ Copy these scripts into the &lt;head&gt; of the blog:
 <script type="text/javascript" src="https://github.com/downloads/bobbydavid/gist-in-tumblr/gist-in-tumblr-full.v0.1.1.min.js"></script>
 ```
 
+Note that you are linking directly to Github. If you prefer, you can download
+your own copy and link to it on Tumblr.
+
 To active a Gist, put it in a &lt;p&gt; tag with the class "gist" by itself:
 
 ```html
@@ -67,6 +70,16 @@ Then modify the HTML source and add the class 'gist' to the paragraph tag:
 &lt;p&gt;Text continues here...&lt;/p&gt;
 ```
 
+The Nitty Gritty. And Misc.
+---------------------------
+
+Note that gist-in-tumblr currently expects gist URLs to take the form
+`https://gist.github.com/[0-9]+(\?file=.+)?`. This means you should not put
+your own username in the URL. In other words, don't do
+`https://gist.github.com/bobbydavid/12345`.
+
+If you want to link just a single file, do
+`https://gist.github.com/12345?file=filename.txt`.
 
 Download and Build
 ------------------
